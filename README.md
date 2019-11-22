@@ -64,7 +64,7 @@ $ panbook -h
 
 ### 紧急情况
 
-如果时间紧迫且 `Panbook` 生成失败时，可以在 `build` 文件夹下使用 `xelatex` 或 `latexmk` 手动编译
+如果时间紧迫且 `Panbook` 生成失败时，可以在 `build` 文件夹下使用 `xelatex` 或 `latexmk` 手动编译，可考虑使用 `-interaction=nonstopmode`
 
 ## 贡献指南
 欢迎提交`Issue`和`Pull Request`。`extensions`, `styles`开发流程请参考 [PanBook 手册](https://panbook.annhe.net/pub/PanBook-book-elegantbook-pc.pdf) 第四章。
