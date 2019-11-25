@@ -73,9 +73,6 @@ $endif$
 $if(institute)$
 \institute{$institute$}
 $endif$
-$if(version)$
-\version{$version$}
-$endif$
 
 \date{\today}
 
