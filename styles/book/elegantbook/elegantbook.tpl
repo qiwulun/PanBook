@@ -70,6 +70,13 @@ $endif$
 $if(author)$
 \author{$for(author)$$author$$sep$, $endfor$}
 $endif$
+$if(institute)$
+\institute{$institute$}
+$endif$
+$if(version)$
+\version{$version$}
+$endif$
+
 \date{\today}
 
 $for(header-includes)$
