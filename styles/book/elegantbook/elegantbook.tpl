@@ -8,6 +8,16 @@ $endfor$]{elegantbook}
 
 \usepackage[yyyymmdd,hhmmss]{datetime}
 
+$if(mainfont)$
+  \setmainfont[$for(mainfontoptions)$$mainfontoptions$$sep$,$endfor$]{$mainfont$}
+$endif$
+$if(sansfont)$
+  \setsansfont[$for(sansfontoptions)$$sansfontoptions$$sep$,$endfor$]{$sansfont$}
+$endif$
+$if(monofont)$
+  \setmonofont[$for(monofontoptions)$$monofontoptions$$sep$,$endfor$]{$monofont$}
+$endif$
+
 \usepackage{ifxetex,ifluatex}
 $if(CJKmainfont)$
   \ifxetex
@@ -106,6 +116,15 @@ $endif$
 \makeatletter
 \def\fps@figure{htbp}
 \makeatother
+
+$if(csl-refs)$
+\newlength{\cslhangindent}
+\setlength{\cslhangindent}{1.5em}
+\newenvironment{cslreferences}%
+  {$if(csl-hanging-indent)$\setlength{\parindent}{0pt}%
+  \everypar{\setlength{\hangindent}{\cslhangindent}}\ignorespaces$endif$}%
+  {\par}
+$endif$
 
 \begin{document}
 \frontmatter
