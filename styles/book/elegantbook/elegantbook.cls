@@ -85,6 +85,9 @@
 % \ProcessOptions*\relax
 \LoadClass[a4paper,oneside]{book}
 
+\usepackage{longtable,booktabs,tabu} % TODO: temp fix for tabu issue
+%issue https://github.com/tabu-issues-for-future-maintainer/tabu/issues/24
+
 \RequirePackage{setspace}
 \RequirePackage{hyperref}
 \hypersetup{
